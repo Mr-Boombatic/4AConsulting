@@ -1,0 +1,64 @@
+@model _4AConsultingMVC.Models.BookViewModel
+
+@{
+    ViewData["Title"] = "Просмотр книги";
+}
+
+<h2>Просмотр книги</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<div class="card">
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>ID:</strong></div>
+            <div class="col-md-10">@Model.Id</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Название:</strong></div>
+            <div class="col-md-10">@Model.Title</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Автор:</strong></div>
+            <div class="col-md-10">@(Model.Author ?? "Не указан")</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Год издания:</strong></div>
+            <div class="col-md-10">@(Model.PublicationYear?.ToString() ?? "Не указан")</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Описание:</strong></div>
+            <div class="col-md-10">@Model.Description</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Оглавление:</strong></div>
+            <div class="col-md-10">
+                @if (!string.IsNullOrEmpty(Model.TableOfContentsHtml))
+                {
+                    @Html.Raw(Model.TableOfContentsHtml)
+                }
+                else
+                {
+                    <span>Нет данных</span>
+                }
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Дата создания:</strong></div>
+            <div class="col-md-10">@Model.CreatedDate.ToString("dd.MM.yyyy HH:mm")</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"><strong>Дата изменения:</strong></div>
+            <div class="col-md-10">@(Model.ModifiedDate?.ToString("dd.MM.yyyy HH:mm") ?? "Не изменялась")</div>
+        </div>
+        <div class="mt-3">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Редактировать</a>
+            <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>
+        </div>
+    </div>
+</div>

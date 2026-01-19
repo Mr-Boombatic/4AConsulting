@@ -1,0 +1,121 @@
+@model _4AConsultingMVC.Models.BookViewModel
+
+@{
+    ViewData["Title"] = "Создание новой книги";
+}
+
+<h2>Создание новой книги</h2>
+
+<div class="card">
+    <div class="card-body">
+        <form asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+            
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">Название <span class="text-danger">*</span></label>
+                <input asp-for="Title" class="form-control" maxlength="200" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Author" class="form-label">Автор</label>
+                <input asp-for="Author" class="form-control" maxlength="200" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="PublicationYear" class="form-label">Год издания</label>
+                <select asp-for="PublicationYear" class="form-select" asp-items="ViewBag.Years"></select>
+                <span asp-validation-for="PublicationYear" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Описание</label>
+                <textarea asp-for="Description" class="form-control" rows="4" maxlength="1000"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="TableOfContentsHtml" class="form-label">Оглавление (HTML редактор)</label>
+                <textarea asp-for="TableOfContentsHtml" id="editorTableOfContents" name="TableOfContentsHtml" class="form-control"></textarea>
+                <small class="form-text text-muted">Содержимое будет сохранено в XML поле</small>
+            </div>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary" onclick="updateCKEditorContent(); return true;">Сохранить</button>
+                <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        (function() {
+            var editorId = 'editorTableOfContents';
+            var initialized = false;
+            
+            function initializeCKEditor() {
+                if (initialized) {
+                    return;
+                }
+                
+                var editorElement = document.getElementById(editorId);
+                
+                if (!editorElement) {
+                    return;
+                }
+                
+                if (typeof CKEDITOR === 'undefined') {
+                    return;
+                }
+                
+                if (CKEDITOR.instances[editorId]) {
+                    initialized = true;
+                    return;
+                }
+                
+                try {
+                    CKEDITOR.replace(editorId, {
+                        height: 300,
+                        toolbar: [
+                            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike'] },
+                            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Blockquote'] },
+                            { name: 'links', items: ['Link', 'Unlink'] },
+                            { name: 'styles', items: ['Format', 'Font', 'FontSize'] },
+                            { name: 'colors', items: ['TextColor', 'BGColor'] },
+                            { name: 'tools', items: ['Maximize', 'Source'] }
+                        ]
+                    });
+                    initialized = true;
+                } catch (e) {
+                    console.warn('CKEditor инициализация:', e.message);
+                }
+            }
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    setTimeout(initializeCKEditor, 150);
+                });
+            } else {
+                setTimeout(initializeCKEditor, 150);
+            }
+            
+            window.addEventListener('load', function() {
+                if (!initialized) {
+                    setTimeout(initializeCKEditor, 300);
+                }
+            });
+        })();
+        
+        function updateCKEditorContent() {
+            var editorId = 'editorTableOfContents';
+            if (typeof CKEDITOR !== 'undefined' && CKEDITOR.instances[editorId]) {
+                CKEDITOR.instances[editorId].updateElement();
+            }
+        }
+    </script>
+}
