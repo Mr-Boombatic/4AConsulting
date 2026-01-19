@@ -1,0 +1,595 @@
+[2026-01-19 10:42:41] Error loading books list: Недопустимое имя объекта "books".
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 64
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 45
+[2026-01-19 10:46:26] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 31
+[2026-01-19 10:46:38] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 194
+[2026-01-19 10:47:34] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 31
+[2026-01-19 10:47:53] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 194
+[2026-01-19 10:48:25] Error loading book
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetBookById(Int32 id) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 83
+   в _4AConsultingWebForms.Book.LoadBook(Int32 id) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 54
+[2026-01-19 10:50:14] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 31
+[2026-01-19 10:50:23] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 194
+[2026-01-19 10:50:43] Error loading book
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetBookById(Int32 id) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 83
+   в _4AConsultingWebForms.Book.LoadBook(Int32 id) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 54
+[2026-01-19 10:52:09] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 194
+[2026-01-19 11:00:12] Invalid mode parameter: 2
+[2026-01-19 11:00:36] Invalid mode parameter: 2
+[2026-01-19 11:00:36] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 253
+[2026-01-19 11:02:44] Invalid mode parameter: edit2
+[2026-01-19 11:02:53] Invalid mode parameter: edit2
+[2026-01-19 11:02:58] Invalid mode parameter: edit2
+[2026-01-19 11:02:58] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 253
+[2026-01-19 11:05:07] Invalid mode parameter: edit2
+[2026-01-19 11:15:05] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 11:15:27] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 11:16:00] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 11:16:26] Invalid mode parameter: view32312
+[2026-01-19 11:16:55] Invalid mode parameter: view32312
+[2026-01-19 11:17:10] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 11:17:20] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 11:39:22] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 11:43:56] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 11:50:50] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:04:35] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:05:20] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.CreateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 157
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 277
+[2026-01-19 12:05:54] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:06:09] Invalid mode parameter: 321
+[2026-01-19 12:09:18] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:09:32] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:12:51] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:12:54] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:15:08] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:16:35] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:17:30] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:26:04] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+[2026-01-19 12:30:07] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:30:21] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:31:20] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:33:19] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:33:36] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:33:47] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 287
+[2026-01-19 12:37:23] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+[2026-01-19 12:37:39] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+[2026-01-19 12:38:17] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+[2026-01-19 12:38:56] Error saving book
+Stack trace:    в System.Threading.Thread.AbortInternal()
+   в System.Threading.Thread.Abort(Object stateInfo)
+   в System.Web.HttpResponse.AbortCurrentThread()
+   в System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+[2026-01-19 12:54:22] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.UpdateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 194
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 266
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 12:54:48] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.UpdateBook(Book book)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 12:54:51] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.UpdateBook(Book book)
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e)
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 12:55:16] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.UpdateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 193
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 266
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 12:56:04] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.UpdateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 193
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 266
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 12:58:40] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.CreateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 152
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 275
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 12:58:46] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   в System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   в System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   в System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   в System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.CreateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 152
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 275
+Inner exception: Объект должен реализовывать интерфейс IConvertible.
+[2026-01-19 13:13:44] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.UpdateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 211
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 266
+[2026-01-19 13:14:30] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 13:15:31] Invalid mode parameter: edi32t
+[2026-01-19 13:18:01] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 13:18:52] Error saving book
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.CreateBook(Book book) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 157
+   в _4AConsultingWebForms.Book.btnSave_Click(Object sender, EventArgs e) в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Book.aspx.cs:строка 275
+[2026-01-19 13:34:29] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 13:36:03] Invalid mode parameter: edit2
+[2026-01-19 15:18:36] Unhandled application error: C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx(32): error CS0103: The name 'GetSectionCount' does not exist in the current context
+Stack trace:    в System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   в Microsoft.AspNet.FriendlyUrls.Abstractions.BuildManagerWrapper.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetWebObjectFactory(HttpContextBase httpContext, String modifiedVirtualPath)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext, String pathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext)
+   в System.Web.Routing.RouteCollection.GetRouteData(HttpContextBase httpContext)
+   в System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   в System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[2026-01-19 15:18:38] Unhandled application error: C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx(32): error CS0103: The name 'GetSectionCount' does not exist in the current context
+Stack trace:    в System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   в System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   в Microsoft.AspNet.FriendlyUrls.Abstractions.BuildManagerWrapper.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetWebObjectFactory(HttpContextBase httpContext, String modifiedVirtualPath)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext, String pathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   в Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext)
+   в System.Web.Routing.RouteCollection.GetRouteData(HttpContextBase httpContext)
+   в System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   в System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[2026-01-19 15:26:36] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 15:27:09] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 15:27:51] Invalid mode parameter: eda
+[2026-01-19 15:33:01] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   в System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.Open()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 39
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+Inner exception: Не удается найти указанный файл
+[2026-01-19 15:40:38] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 15:50:02] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 15:51:00] Invalid mode parameter: view2
+[2026-01-19 15:51:24] Invalid mode parameter: view2
+[2026-01-19 15:57:11] Error loading books list
+Stack trace:    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader()
+   в _4AConsultingWebForms.DataAccess.StoredProcedureService.GetAllBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\DataAccess\StoredProcedureService.cs:строка 40
+   в _4AConsultingWebForms.Books.LoadBooks() в C:\Users\alekt\source\repos\4AConsulting\4AConsultingWebForms\Books.aspx.cs:строка 32
+[2026-01-19 15:58:40] Invalid mode parameter: view2
