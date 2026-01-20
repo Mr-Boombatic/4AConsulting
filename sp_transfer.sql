@@ -1,4 +1,4 @@
-if object_id(' T', 'U') is not null
+ï»¿if object_id(' T', 'U') is not null
     drop table T;
 
 create table T(
@@ -41,14 +41,14 @@ begin
     if @S <= 0
     begin
         set @ResultCode = 3;
-        raiserror('Ñóììà ïåðåâîäà äîëæíà áûòü áîëüøå íóëÿ', 16, 1);
+        raiserror('Ð¡ÑƒÐ¼Ð¼Ð° Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ', 16, 1);
         return;
     end
     
     if @N1 = @N2
     begin
         set @ResultCode = 3;
-        raiserror('Íîìåðà ñ÷åòîâ íå äîëæíû ñîâïàäàòü', 16, 1);
+        raiserror('ÐÐ¾Ð¼ÐµÑ€Ð° ÑÑ‡ÐµÑ‚Ð¾Ð² Ð½Ðµ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°Ñ‚ÑŒ', 16, 1);
         return;
     end
     
@@ -71,7 +71,7 @@ begin
         begin
             set @ResultCode = 2;
             rollback transaction;
-            raiserror('Îäèí èç ñ÷åòîâ íå íàéäåí', 16, 1);
+            raiserror('ÐžÐ´Ð¸Ð½ Ð¸Ð· ÑÑ‡ÐµÑ‚Ð¾Ð² Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½', 16, 1);
             return;
         end
         
@@ -80,9 +80,9 @@ begin
             set @ResultCode = 1;
             rollback transaction;
             set @ErrorMessage = 
-                'Íåäîñòàòî÷íî ñðåäñòâ íà ñ÷åòå ' + @N1 + 
-                '. Òåêóùèé áàëàíñ: ' + cast(@CurrentBalance1 as nvarchar(20)) + 
-                ', òðåáóåòñÿ: ' + cast(@S as nvarchar(20));
+                'ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ ÑÑ€ÐµÐ´ÑÑ‚Ð² Ð½Ð° ÑÑ‡ÐµÑ‚Ðµ ' + @N1 + 
+                '. Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ: ' + cast(@CurrentBalance1 as nvarchar(20)) + 
+                ', Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ: ' + cast(@S as nvarchar(20));
             raiserror(@ErrorMessage, 16, 1);
             return;
         end
@@ -95,7 +95,7 @@ begin
         begin
             set @ResultCode = 3;
             rollback transaction;
-            raiserror('Îøèáêà ïðè ñïèñàíèè ñðåäñòâ ñî ñ÷åòà %s', 16, 1, @N1);
+            raiserror('ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑÐ¿Ð¸ÑÐ°Ð½Ð¸Ð¸ ÑÑ€ÐµÐ´ÑÑ‚Ð² ÑÐ¾ ÑÑ‡ÐµÑ‚Ð° %s', 16, 1, @N1);
             return;
         end
         
@@ -107,7 +107,7 @@ begin
         begin
             set @ResultCode = 3;
             rollback transaction;
-            raiserror('Îøèáêà ïðè çà÷èñëåíèè ñðåäñòâ íà ñ÷åò %s', 16, 1, @N2);
+            raiserror('ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð·Ð°Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ð¸ ÑÑ€ÐµÐ´ÑÑ‚Ð² Ð½Ð° ÑÑ‡ÐµÑ‚ %s', 16, 1, @N2);
             return;
         end
         
